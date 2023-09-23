@@ -1,0 +1,119 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: #3d08ff;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Estilos para el carrito */
+.carrito {
+  position: relative;
+  float: right;
+  margin-top: -30px;
+}
+
+.carrito img {
+  width: 30px;
+  cursor: pointer;
+}
+
+/* Estilos para la sección de productos */
+.productos {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los productos se envuelvan a la siguiente fila si es necesario */
+  justify-content: space-between; /* Distribuye los productos horizontalmente */
+  padding: 20px;
+}
+
+/* Estilos para cada producto */
+.producto {
+  width: calc(33.33% - 20px);
+  border: 1px solid #3b3b3b59;
+  border-radius: 7px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+/* Efecto de hover en los productos */
+.producto:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para las imágenes de los productos */
+.producto img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para los precios */
+.precio {
+  font-weight: bold;
+  color: #000;
+  font-size: 20px;
+}
+
+/* Estilos para los botones "Obtener" */
+.agregar-carrito {
+  background-color: #3d08ff;
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 18px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.agregar-carrito:hover {
+  background-color: #3d08ffa1;
+}
+
+/* Estilos para el número de productos en el carrito */
+#carrito-cantidad {
+  position: absolute;
+  background-color: #000;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  top: -10px;
+  right: -10px;
+}
+
+/* Media query para pantallas pequeñas (por ejemplo, dispositivos móviles) */
+@media (max-width: 768px) {
+  .productos {
+      flex-direction: column; /* Coloca los productos uno encima del otro en dispositivos móviles */
+  }
+
+  .producto {
+      width: 100%; /* Ocupa todo el ancho en dispositivos móviles */
+  }
+
+  .precio {
+      font-size: 16px; /* Reduce el tamaño del precio en dispositivos móviles */
+  }
+
+  .agregar-carrito {
+      font-size: 16px; /* Reduce el tamaño del botón en dispositivos móviles */
+  }
+}

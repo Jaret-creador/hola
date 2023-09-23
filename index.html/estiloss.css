@@ -1,0 +1,47 @@
+/* Estilos generales para el sitio web */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para la barra de navegación */
+.barra-navegacion {
+    background-color: transparent; /* Fondo transparente */
+    position: fixed; /* Barra de navegación fija en la parte superior */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100; /* Asegura que la barra esté por encima del contenido */
+}
+
+.barra-navegacion ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos de navegación */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente */
+}
+
+.barra-navegacion li {
+    margin: 0 15px;
+}
+
+.barra-navegacion a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilos para el contenido principal con imagen de fondo */
+.contenido-principal {
+    background-image: url('Imagenes-Logo-Distrijaret/prueba.jfif'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fondo fijo mientras se desplaza */
+    height: 600px; /* Altura adecuada para el contenido */
+    color: #fff; /* Color de texto sobre la imagen */
+    text-align: center;
+    padding: 100px 0; /* Espaciado interior */
+}
